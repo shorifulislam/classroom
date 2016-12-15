@@ -7,4 +7,4 @@ App.students_counter = App.cable.subscriptions.create "StudentsCounterChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
-    console.log "du nouveau : "+data
+    $('#counter').text(data)

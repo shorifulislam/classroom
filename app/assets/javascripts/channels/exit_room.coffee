@@ -3,6 +3,7 @@ App.exit_room = App.cable.subscriptions.create "ExitRoomChannel",
     # Called when the subscription is ready for use on the server
 
   disconnected: ->
+    Alert "La classe compte un élève de moins"
     # Called when the subscription has been terminated by the server
 
   received: (data) ->

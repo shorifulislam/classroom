@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/pimpin/classroom/badges/gpa.svg)](https://codeclimate.com/github/pimpin/classroom)
+
 # README
 
 This README would normally document whatever steps are necessary to get the

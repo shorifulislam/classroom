@@ -11,3 +11,7 @@ services:
       - "3000:3000"
     depends_on:
       - db
+  ide:
+    image: quantumobject/docker-codiad
+    ports:
+      - "80:80"

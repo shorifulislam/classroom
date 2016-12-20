@@ -2,14 +2,29 @@
 
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## Technical overview :
 
-* System dependencies
+* Ruby version : 2.3.3
+
+* Rails version 5.0.0.1
+
+* System dependencies : docker (engine and compose)
+
+
+## Setup with docker
+
+**Requierements**
+
+Install Docker following [doc](https://docs.docker.com/engine/installation/linux/ubuntulinux/).
+Install Docker-compose on Ubuntu following [doc](https://docs.docker.com/compose/install/) or this [shell script (gist)](https://gist.github.com/wdullaer/f1af16bd7e970389bad3).
+
+**Our docker config description**
+
+inspired from https://docs.docker.com/compose/rails/
+
+## TODO
 
 * Configuration
 

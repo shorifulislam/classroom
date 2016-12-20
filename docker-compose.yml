@@ -12,6 +12,6 @@ services:
     depends_on:
       - db
   ide:
-    image: quantumobject/docker-codiad
+    build: ./ide/.
     ports:
       - "80:80"

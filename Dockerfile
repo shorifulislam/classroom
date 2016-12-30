@@ -19,8 +19,9 @@ FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r7
 
 ENV STACKSMITH_STACK_ID="lsxg31o" \
     STACKSMITH_STACK_NAME="Ruby 2.3.3 on minideb" \
-    STACKSMITH_STACK_PRIVATE="1"
-
+    STACKSMITH_STACK_PRIVATE="1" \
+    CLASSROOM_DATABASE_HOST="db" \
+    CLASSROOM_DATABASE_USER="postgres"
 # Install required system packages
 RUN install_packages libc6 libssl1.0.0 zlib1g libreadline6 libncurses5 libtinfo5 libffi6 libxml2-dev zlib1g-dev libxslt1-dev libgmp-dev ghostscript imagemagick libmysqlclient18 libpq5 libpq-dev
 

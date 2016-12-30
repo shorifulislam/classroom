@@ -13,7 +13,9 @@
 
 FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r7
 
-MAINTAINER Bitnami <containers@bitnami.com>
+# FROM ruby:2.3-onbuild
+
+# MAINTAINER Bitnami <containers@bitnami.com>
 
 ENV STACKSMITH_STACK_ID="lsxg31o" \
     STACKSMITH_STACK_NAME="Ruby 2.3.3 on minideb" \
@@ -30,6 +32,8 @@ ENV PATH=/opt/bitnami/ruby/bin:$PATH
 # Ruby on Rails template
 ENV RAILS_ENV=development
 
+# RUN git clone https://github.com/pimpin/classroom.git
+
 COPY Gemfile* /app/
 WORKDIR /app
 
@@ -37,6 +41,6 @@ RUN bundle install --without production
 
 COPY . /app
 
-# EXPOSE 3000
+EXPOSE 3000
 
 CMD ["bundle", "exec", "rails", "db:setup"]
